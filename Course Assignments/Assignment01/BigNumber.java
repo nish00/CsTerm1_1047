@@ -7,14 +7,14 @@ public class BigNumber {
 
         // Using for loop for looping on all numbers
 		for (BigDecimal i = new BigDecimal("100"); i.compareTo(new BigDecimal("1000")) <= 0; i = i.add(new BigDecimal("100"))) {
-			System.out.println("The number is "+i + "\n" + total(i));
+			System.out.println("The total of "+i + " is:\n" + total(i)+"\n");
         } 
 	}
 	
     // Declaration of method for calculation
     public static BigDecimal total(BigDecimal number) {
         // Declaration of Bigdecimal numbers for storing number 1 and variable for final number
-        BigDecimal finalNumber = new BigDecimal("0.0");
+        BigDecimal finalNumber = new BigDecimal("0");
 		BigDecimal one = new BigDecimal("1");
 
         // Using nested loops for for looping on addition and factorial multiplication 
